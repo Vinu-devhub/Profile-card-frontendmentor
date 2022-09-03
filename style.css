@@ -98,6 +98,7 @@ body {
 
 .card-body span.user-city {
     color: var(--Dark-grayish-blue);
+    font-size: 14px;
 }
 
 
