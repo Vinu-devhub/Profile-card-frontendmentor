@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+:root {
+
+    /* Colors */
+    
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+
+    /*Font Family */
+
+    --font-kumbh : 'Kumbh Sans', sans-serif;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--Dark-cyan);
+    background-image: url(/assets/bg-pattern-top.svg), url(/assets/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-position: left -150px top -450px, right -150px bottom -500px;
+}
+
+/* ---------- Card head ---------- */
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    max-width: 400px;
+    width: 90%;
+    overflow: hidden;
+}
+
+.card_img {
+    position: relative;
+    object-fit: fill;
+}
+
+
+.card_img .cover-pic{
+    display: block;
+    width: 100%;
+}
+
+
+.profile-img .profile-pic{
+    display: block;
+    border-radius: 50%;
+    border: 10px solid white;
+    position: relative;
+    margin: 0 auto;
+    margin-top: -50px;  
+}
+
+/* ---------- /Card head ---------- */
+
+
+
+/* ---------- Card body ---------- */
+
+.card-body {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.card-body span.user-name{
+    color: var(--Very-dark-blue);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card-body span.user-age{
+    color: var(--Dark-grayish-blue);
+    font-size: 16px;
+    margin-left: 5px;
+
+}
+
+.card-body .city {
+    margin: 5px 0;
+}
+
+
+.card-body span.user-city {
+    color: var(--Dark-grayish-blue);
+}
+
+
+/* ---------- /Card body ---------- */
+
+
+
+/* ---------- Card footer ---------- */
+
+.card-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 50px 20px 30px;
+}
+
+.card-footer .grid-item span{
+    display: block;
+    text-align: center
+}
+
+.card-footer .grid-item span.card-stats{
+    color: var(--Very-dark-blue);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+
+.card-footer .grid-item span.card-items{
+    color: var(--Dark-grayish-blue);
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+/* ---------- /Card footer ---------- */
+
+
+/* ---------- Media Query ---------- */
+
+@media screen and (max-width: 640px) {
+
+    .card-body span.user-name{
+        font-size: 18px;
+    }
+
+    .card-body span.user-age{
+        font-size: 16px;
+    }
+
+    .card-body span.user-city {
+        font-size: 14px;
+    }
+    
+    .card-footer .grid-item span.card-stats{
+        font-size: 18px;
+    }
+    
+    .card-footer .grid-item span.card-items{
+        font-size: 12px;
+    }
+    
+
+    
+}
